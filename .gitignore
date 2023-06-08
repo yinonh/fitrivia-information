@@ -1,0 +1,13 @@
+# PyCharm IDE
+.idea/
+
+# Python compiled files
+__pycache__/
+*.py[cod]
+
+# Streamlit app output files
+*.csv
+*.pkl
+
+# Virtual environment
+venv/
