@@ -18,7 +18,16 @@ class Demo(Screen):
                     "This video provides an overview of the app's interface, highlighting its user-friendly design and seamless navigation. Discover how FiTrivia seamlessly combines fitness and knowledge, "
                     "making exercise an integral part of your trivia experience.")
 
-        video_file = open('Assets/demo.mp4', 'rb')
+        st.markdown("## New Demo")
+
+        video_file = open('Assets/FiTrivia demo.mp4', 'rb')
+        video_bytes = video_file.read()
+
+        st.video(video_bytes)
+
+        st.markdown("## Old Demo")
+
+        video_file = open('Assets/old demo.mp4', 'rb')
         video_bytes = video_file.read()
 
         st.video(video_bytes)

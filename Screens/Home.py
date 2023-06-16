@@ -30,12 +30,28 @@ class HomePage(Screen):
 
         st.subheader('Main Technologies:')
 
-        institutions_images = ['https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
-                               'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_flutter_icon_130599.png',
-                               'https://www.svgrepo.com/show/353657/django-icon.svg',
-                               'https://i.ibb.co/MgPJtY1/New-Project-1.png',
-                               'https://i.ibb.co/jrzzV0S/New-Project-1-1.png']
+        institutions_images1 = [
+            'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
+            'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_flutter_icon_130599.png',
+            'https://www.svgrepo.com/show/353657/django-icon.svg',
+            'https://i.ibb.co/MgPJtY1/New-Project-1.png']
 
-        for index, col in enumerate(st.columns(len(institutions_images))):
+        for index, col in enumerate(st.columns(len(institutions_images1))):
             with col:
-                st.image(institutions_images[index], width=100)
+                st.image(institutions_images1[index], width=100)
+
+        institutions_images2 = [
+            'https://i.ibb.co/jrzzV0S/New-Project-1-1.png',
+            'https://raw.githubusercontent.com/wiki/opencv/opencv/logo/OpenCV_logo_no_text.png',
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Keras_logo.svg/1200px-Keras_logo.svg.png',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7RiM9Z5UItq-TJVnmJvQL_Kr88NzjJU_ZdA&usqp=CAU']
+
+        for index, col in enumerate(st.columns(len(institutions_images2))):
+            with col:
+                st.image(institutions_images2[index], width=100)
+
+
+
+
+
+
