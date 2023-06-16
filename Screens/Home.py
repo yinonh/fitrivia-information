@@ -34,7 +34,8 @@ class HomePage(Screen):
             'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
             'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_flutter_icon_130599.png',
             'https://www.svgrepo.com/show/353657/django-icon.svg',
-            'https://i.ibb.co/MgPJtY1/New-Project-1.png']
+            'https://i.ibb.co/MgPJtY1/New-Project-1.png'
+        ]
 
         for index, col in enumerate(st.columns(len(institutions_images1))):
             with col:

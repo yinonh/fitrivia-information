@@ -5,8 +5,9 @@ from Screens.Home import HomePage
 from Screens.Demo import Demo
 from Screens.Data import Data
 from Screens.Model import Model
-from Screens.More import More
+from Screens.Architecture import Architecture
 from Screens.Pilot import Pilot
+from Screens.Links import Links
 
 
 
@@ -27,9 +28,9 @@ class Managment:
             st.image(IMAGE_PATH)
             st.title("Navigation Bar")
             choice = option_menu(menu_title=None,
-                                 options=[HomePage.name, Demo.name, Data.name, Model.name, Pilot.name, More.name],
-                                 icons=[HomePage.icon, Demo.icon, Data.icon, Model.icon, Pilot.icon, More.icon], default_index=0)
-            st.info("Welcome to the website")
+                                 options=[HomePage.name, Demo.name, Data.name, Model.name, Pilot.name, Architecture.name, Links.name],
+                                 icons=[HomePage.icon, Demo.icon, Data.icon, Model.icon, Pilot.icon, Architecture.icon, Links.icon], default_index=0)
+            #st.info("Welcome to the website")
 
         if choice == HomePage.name:
             self.window = HomePage()
@@ -46,8 +47,11 @@ class Managment:
         elif choice == Pilot.name:
             self.window = Pilot()
 
-        elif choice == More.name:
-            self.window = More()
+        elif choice == Architecture.name:
+            self.window = Architecture()
+
+        elif choice == Links.name:
+            self.window = Links()
 
         self.window.build()
 
