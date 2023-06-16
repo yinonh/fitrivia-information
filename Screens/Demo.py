@@ -18,19 +18,19 @@ class Demo(Screen):
                     "This video provides an overview of the app's interface, highlighting its user-friendly design and seamless navigation. Discover how FiTrivia seamlessly combines fitness and knowledge, "
                     "making exercise an integral part of your trivia experience.")
 
-        # st.markdown("## New Demo")
-        #
-        # video_file = open('Assets/FiTrivia_demo.mp4', 'rb')
-        # video_bytes = video_file.read()
-        #
-        # st.video(video_bytes)
+        st.markdown("## New Demo")
+
+        video_file1 = open('Assets/FiTrivia_demo.mp4', 'rb')
+        video_bytes1 = video_file1.read()
+
+        st.video(video_bytes1)
 
         st.markdown("## Old Demo")
 
-        video_file = open('Assets/old_demo.mp4', 'rb')
-        video_bytes = video_file.read()
+        video_file2 = open('Assets/old_demo.mp4', 'rb')
+        video_bytes2 = video_file2.read()
 
-        st.video(video_bytes)
+        st.video(video_bytes2)
 
         st.markdown(
             '📹 Demo Video 2:  you can see how our app helps users exercise while testing their knowledge, As the user performs an exercise that they believe matches the correct answer, our model classifies the video and marks the answer that it recognizes with a black border. At the end of each question, the correct answer is revealed, and the user gets a few seconds to rest before the next question. Finally, the user can see the score they achieved, making our app a fun and effective way to stay fit and learn!')
