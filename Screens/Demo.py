@@ -20,10 +20,7 @@ class Demo(Screen):
 
         st.markdown("## New Demo")
 
-        video_file1 = open('Assets/FiTrivia_demo.mp4', 'rb')
-        video_bytes1 = video_file1.read()
-
-        st.video(video_bytes1)
+        st.video('https://youtu.be/iFsI7fl1JPQ')
 
         st.markdown("## Old Demo")
 
