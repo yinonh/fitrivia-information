@@ -20,7 +20,7 @@ class Demo(Screen):
 
         st.markdown("## New Demo")
 
-        st.video('https://youtu.be/iFsI7fl1JPQ')
+        st.video('https://www.youtube.com/watch?v=pwdNRESvAt0')
 
         st.markdown("## Old Demo")
 
